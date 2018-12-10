@@ -170,16 +170,13 @@ transform: translateY(0)}
   }
 }
 
-@media screen and (min-height: 650px) {
+@media screen and (min-height: 650px) and (min-width: 595px){
   #midPart {
     font-size: 5em;
   }
 }
 
-@media screen and (min-height: 700px) {
-  #name {
-    font-size: 4em;
-  }
+@media screen and (min-height: 700px) and (min-width:520px) {
   #about {
     font-size: 1em;
   }
