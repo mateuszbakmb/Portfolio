@@ -1,0 +1,165 @@
+$main-color: #9edff5;
+$font-color: #535754;
+$darker-font: #2e2e2e;
+$border-color: #7a123e;
+
+body {
+  background-color: $main-color;
+  color: $font-color;
+  margin: 0;
+  font-family: 'Rubik', sans-serif;
+}
+
+#container {
+  margin: 15px;
+  height: calc(100vh - 30px);
+  border: 6px solid $border-color;
+  box-sizing: border-box;
+  padding: 20px 40px;
+}
+
+  #name {
+    color: $darker-font;
+    font-weight: bold;
+    font-size: 3em;
+    opacity: 0;
+    animation: appear 0.5s forwards;
+    animation-delay: 0.1s;
+  }
+
+  #about {
+    color: $darker-font;
+    max-width: 500px;
+    text-align: justify;
+    font-size: 0.9em;
+    opacity: 0;
+    animation: appear 0.5s forwards;
+    animation-delay: 0.5s;
+  }
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:focus, a:visited {
+  outline:none;
+}
+
+#midPart {
+  text-align: center;
+  font-size: 4rem;
+  margin: 80px 0;
+  opacity: 0;
+  animation: appear 0.5s forwards;
+  animation-delay: 0.8s;
+
+  i {
+    margin: 20px;
+    color: $font-color;
+    transition: all 0.3s ease-in-out;
+  }
+
+  i:hover {
+    color: $border-color;
+  }
+}
+
+#projects {
+  color: $darker-font;
+  font-weight: bold;
+  opacity: 0;
+  animation: appear 0.5s forwards;
+  animation-delay: 0.5s;
+
+  ul {
+    color: $font-color;
+    font-weight: normal;
+    padding: 0;
+    margin-left: 0;
+
+    li {
+      list-style-type: none;
+      margin-bottom: 10px;
+      opacity: 0;
+      animation: appear 0.5s forwards;
+      animation-delay: 0.7s;
+      }
+
+      li:last-child{
+        opacity: 0;
+        animation: appearLast 0.5s forwards;
+      }
+
+      li:before {
+        vertical-align: middle;
+        display: inline-block;
+        content: " ";
+        background-color: $border-color;
+        height: 6px;
+        width: 6px;
+        border-radius: 1px;
+        margin: 0 5px;
+    }
+
+      li:nth-child(1){
+        animation-delay: 1s;
+      }
+      li:nth-child(2){
+        animation-delay: 1.2s;
+      }
+      li:nth-child(3){
+        animation-delay: 1.4s;
+      }
+      li:nth-child(4){
+        animation-delay: 1.6s;
+      }
+
+    span{
+      font-size: 0.8em;
+      opacity: 0.2;
+      transition: all 0.3s ease-in-out;
+    }
+
+      a:hover span{
+        opacity: 1;
+        color: $border-color;
+      }
+  }
+}
+
+@keyframes appear {
+0%{opacity:0;
+transform: translateY(-10px)}
+100%{opacity:1;
+transform: translateY(0)}
+}
+
+@keyframes appearLast {
+0%{opacity:0;
+transform: translateY(-10px)}
+100%{opacity:0.5;
+transform: translateY(0)}
+}
+
+@media screen and (max-width: 768px){
+  #name{
+    font-size: 2.5em;
+  }
+}
+
+@media screen and (max-width: 575px){
+  #container {
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 473px){
+  #midPart{
+    margin: 20px;
+  }
+  #midPart i {
+    display: block;
+    margin-bottom: 30px;
+  }
+}
