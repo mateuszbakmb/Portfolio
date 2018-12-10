@@ -145,6 +145,14 @@ a:focus, a:visited {
   }
 }
 @media screen and (max-width: 473px) {
+  #lang {
+    display: inline-block;
+    position: relative;
+    top: 0;
+    right: 0;
+    vertical-align: middle;
+  }
+
   #midPart {
     margin: 20px;
   }
