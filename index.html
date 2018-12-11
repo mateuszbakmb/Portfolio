@@ -16,19 +16,27 @@
   <main>
 
     <div id="container">
+      <span id="lang"><a href="#" id='pl'>pl</a> | <a href="#" id='en' class='noPointer'>en</a></span>
       <header>
         <div id="name">Mateusz Bąk</div>
-        <div id="about">Graduated in Law from Adam Mickiewicz University in Poznań. Self-taught front-end developer. Hoping to improve web development skills and get commercial experience by becoming an intern or a junior developer.</div>
+        <div class='about shown'>Graduated in Law from Adam Mickiewicz University in Poznań. Self-taught front-end developer. Hoping to improve web development skills and get commercial experience by becoming an intern or a junior developer.</div>
+        <div class='about hidden'>Absolwent Prawa na Uniwersytecie im. Adama Mickiewicza w Poznaniu. Początkujący front-end developer, którego celem jest rozwój umiejętności koderskich i zdobycie doświadczenia komercyjnego poprzez zostanie stażystą
+          lub junior developerem.</div>
       </header>
       <section>
-        <div id="midPart">
+        <div class="midPart shown">
           <a href="https://github.com/mateuszbakmb" target="_blank"><i class="fab fa-github"></i></a>
-          <a href="#" target="_blank"><i class="fas fa-user"></i></a>
+          <a href="https://drive.google.com/file/d/1yGGkdW1InzRSlY2c6jjrDYxFwLz6cnYi/view?usp=sharing" target="_blank"><i class="fas fa-user"></i></a>
+          <a href="mailto:mateuszbak.mb@gmail.com"><i class="fas fa-envelope"></i></a>
+        </div>
+        <div class="midPart hidden">
+          <a href="https://github.com/mateuszbakmb" target="_blank"><i class="fab fa-github"></i></a>
+          <a href="https://drive.google.com/file/d/1-GJRiutuoTIILLE65M1iGUE68YGu8OvL/view?usp=sharing" target="_blank"><i class="fas fa-user"></i></a>
           <a href="mailto:mateuszbak.mb@gmail.com"><i class="fas fa-envelope"></i></a>
         </div>
       </section>
       <section>
-        <div id="projects">
+        <div class='projects shown'>
           Projects:
           <ul>
             <li><a id="new1" href="https://mateuszbakmb.github.io/Quizzlar/" target="_blank">Quizzlar <span id="new2">ES6, HTML5, CSS3, Bootstrap</span></a></li>
@@ -37,9 +45,19 @@
             <li>more to be added soon</li>
           </ul>
         </div>
+        <div class='projects hidden'>
+          Projekty:
+          <ul>
+            <li><a id="new1" href="https://mateuszbakmb.github.io/Quizzlar/" target="_blank">Quizzlar <span id="new2">ES6, HTML5, CSS3, Bootstrap</span></a></li>
+            <li><a href="https://mateuszbakmb.github.io/React---Random-Movie-Generator/" target="_blank">Random movie generator <span>React, jQuery, HTML5, CSS3, Bootstrap</span></a></li>
+            <li><a href="https://mateuszbakmb.github.io/new-home/" target="_blank">New Home <span>HTML5, CSS3, Sass, Bootstrap, ES6</span></a></li>
+            <li>więcej projektów wkrótce</li>
+          </ul>
+        </div>
       </section>
     </div>
   </main>
+  <script src="script/script.js"></script>
 </body>
 
 </html>
