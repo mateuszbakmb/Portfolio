@@ -2,4 +2,4 @@
 
 Full website at https://mateuszbakmb.github.io/Portfolio/
 
-Used: JavaScript, HTML, CSS, Sass
+Used: JavaScript ES6, HTML5, CSS3, Sass
