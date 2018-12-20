@@ -63,7 +63,7 @@ a:focus, a:visited {
 .midPart {
   text-align: center;
   font-size: 4em;
-  margin: 80px 0;
+  margin: 60px 0;
   opacity: 0;
   animation: appear 0.5s forwards;
   animation-delay: 0.8s;
@@ -122,6 +122,9 @@ a:focus, a:visited {
 }
 .projects ul li:nth-child(4) {
   animation-delay: 1.6s;
+}
+.projects ul li:nth-child(5) {
+  animation-delay: 1.8s;
 }
 .projects ul span {
   font-size: 0.8em;
