@@ -1,3 +1,5 @@
+document.addEventListener('DOMContentLoaded', ()=>{
+
 let buttonPL = document.getElementById('pl')
 let buttonEN = document.getElementById('en')
 
@@ -38,3 +40,5 @@ function changeEN (e){
   buttonEN.removeEventListener('click', changeEN)
   buttonPL.addEventListener('click', changePL)
 }
+
+})
