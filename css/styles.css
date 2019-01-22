@@ -6,6 +6,8 @@ body {
 }
 
 #container {
+  display: grid;
+  grid-template-rows: 30% 40% 30%;
   margin: 15px;
   height: calc(100vh - 30px);
   border: 6px solid #570000;
@@ -49,6 +51,7 @@ body {
   opacity: 0;
   animation: appear 0.5s forwards;
   animation-delay: 0.5s;
+  transition: all 0.3s ease-in-out;
 }
 
 a {
@@ -60,10 +63,20 @@ a:focus, a:visited {
   outline: none;
 }
 
+#github {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#links {
+  display: flex;
+  align-items: center;
+}
+
 .midPart {
   text-align: center;
   font-size: 4em;
-  margin: 60px 0;
   opacity: 0;
   animation: appear 0.5s forwards;
   animation-delay: 0.8s;
@@ -83,6 +96,7 @@ a:focus, a:visited {
   opacity: 0;
   animation: appear 0.5s forwards;
   animation-delay: 0.5s;
+  transition: all 0.3s ease-in-out;
 }
 .projects ul {
   color: #535754;
@@ -156,60 +170,24 @@ a:focus, a:visited {
     transform: translateY(0);
   }
 }
-@media screen and (max-width: 768px) {
-  #name {
-    font-size: 2.5em;
+@media screen and (min-width: 1300px) {
+  .about, section {
+    font-size: 120%;
   }
 }
-@media screen and (max-width: 575px) {
+@media screen and (max-width: 470px) {
   #container {
+    display: block;
     height: auto;
-  }
-}
-@media screen and (max-width: 473px) {
-  #lang {
-    display: inline-block;
-    position: relative;
-    top: 0;
-    right: 0;
-    vertical-align: middle;
+    min-height: calc(100vh - 30px);
   }
 
   .midPart {
-    margin: 20px;
+    margin: 40px 0;
   }
 
   .midPart i {
     display: block;
-    margin-bottom: 30px;
-  }
-}
-@media screen and (min-width: 575px) and (max-height: 600px) {
-  #container {
-    height: auto;
-  }
-}
-@media screen and (min-height: 650px) and (min-width: 595px) {
-  .midPart {
-    font-size: 5em;
-  }
-}
-@media screen and (min-height: 700px) {
-  .about {
-    font-size: 1em;
-  }
-
-  .midPart {
-    font-size: 6em;
-  }
-
-  .projects {
-    font-size: 1.2em;
-  }
-}
-@media screen and (min-height: 750px) {
-  .midPart {
-    margin: 100px 0;
   }
 }
 
