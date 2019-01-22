@@ -197,3 +197,14 @@ transform: translateY(0)}
     display: block;
   }
 }
+
+@media screen and (max-height:500px){
+  #container {
+    display:block;
+    height: auto;
+    min-height: calc(100vh - 30px);
+  }
+  .midPart{
+    margin: 40px 0;
+  }
+}

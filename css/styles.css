@@ -190,5 +190,16 @@ a:focus, a:visited {
     display: block;
   }
 }
+@media screen and (max-height: 500px) {
+  #container {
+    display: block;
+    height: auto;
+    min-height: calc(100vh - 30px);
+  }
+
+  .midPart {
+    margin: 40px 0;
+  }
+}
 
 /*# sourceMappingURL=styles.css.map */
